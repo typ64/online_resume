@@ -1,0 +1,411 @@
+body {
+  margin: 0;
+}
+html{
+  scroll-behavior:smooth;
+}
+a{
+  color:#9d9d9d;
+}
+a:hover{
+  color:#4CAF50;
+}
+.right{
+  float:right;
+}
+.middle{
+  text-align:center;
+  margin:0;
+}
+.heading1_cap{
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 1em;
+}
+.heading2{
+  font-weight: bold;
+  float: left;
+}
+/*.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 17%;
+  background-color: #f1f1f1;
+  position: fixed;
+  height:90%;
+  overflow: auto;
+}*/
+.nav li a {
+  /*display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;*/
+  font-size: 150%;
+}
+.nav li.active {
+  border: 1px solid #4CAF50;
+}
+.navbar{
+  margin-bottom: 0px;
+}
+.main{
+  /*padding:1px 16px;*/
+}
+#resume, #cover_letter{
+  background-color:white;
+  border-width:2em;
+  border-style: solid;
+  border-image: url("images/background_image.png") 100 stretch;
+  /*width: 76%;*/
+  /*margin-left:15%;*/
+  padding:10px 16px;
+}
+#about, #portfolio{
+  background-color:white;
+  border: 0px solid transparent;
+  /*width: 65%;*/
+  /*margin-left:20%;*/
+  padding:10px 16px;
+}
+/*#home{
+  width: 100%;
+}*/
+#myVideo{
+  z-index:-100;
+  position: fixed;
+}
+#home_title{
+  color: #FFF;
+}
+#home_title_wrapper{
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 25em;
+}
+#home_title_div{
+  width: 100%;
+}
+.resume_name{
+  font-size:25px;
+  font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+  font-style: italic;
+  font-weight: bold;
+}
+#summary_text{
+  text-align: center;
+}
+td.stars{
+  padding: 0px 0px 2% 0px;
+}
+/*Source:https://www.w3schools.com/howto/howto_css_aspect_ratio.asp*/
+.container{
+  width: 90%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  position: relative; /* If you want text inside of it */
+}
+div.star_div{
+  background-color: #4CAF50;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align:middle;
+}
+#skills_table{
+  cellspacing: 0;
+  cellpadding: 0;
+  width: 75%;
+}
+.skills_label{
+  border-right: double;
+  text-align: right;
+  padding-right: .3em;
+  font-style: italic;
+}
+.skills{
+  border-width: 1px 0px 1px 0px;
+  border-style: dashed;
+  padding-left: 1%;
+}
+.stars{
+   border-collapse:collapse;
+   border-bottom: 1px dashed;
+   border-top: 1px dashed;
+}
+.stars:last-child{
+  border-right: 1px solid;
+
+}
+.dashes::after {
+  content: "\0020";
+  display: block;
+  min-height: .8em;
+  border-bottom: 1px dashed;
+  overflow: hidden;
+}
+.job_duties_list, .project_list{
+  list-style: none;
+}
+.job_duties_list li:before, .project_list li:before{
+  content:"\262F";
+}
+.project_link{
+  font-style: italic;
+  font-size: ;
+}
+#about_me_pic_div{
+  border: solid #4CAF50;
+  float: right;
+  width: 25%;
+  padding: 2%;
+  margin: 2%;
+  background-color: black;
+}
+#about_me_pic{
+  height: 100%;
+  width: 100%;
+  border: solid #4CAF50;
+}
+#hobbies{
+  width: 40%;
+}
+#hobbies,#about_me_description{
+  margin-top: 3%;
+}
+.hobby_table{
+  float: left;
+  width: 7em;
+  margin: 5%;
+  /*border: solid #4CAF50;*/
+}
+/* Clearfix (clear floats) */
+#hobbies::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.hobby_table img{
+  width: 100%;
+}
+.hobby_table caption{
+  text-align: center;
+  caption-side: bottom;
+  font-size: 100%;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  border-color: #4CAF50;
+  margin: 0em -0.2em 0em -0.2em;
+}
+.mobile_view{
+  display: none;
+}
+.tab_view{
+  display: none;
+}
+.mySlides:first-child{
+  display: block;
+}
+.mySlides{
+  display:none;
+  width:100%;
+}
+.big_data_visual, .online_resume_visual {
+  width:87%;
+  height: 40em;
+}
+.budget_app_visual{
+  position: relative;
+  width: 87%;
+}
+#slideShow_caption{
+  margin-left: 50%;
+  font-style: italic;
+  font-size: 2em;
+  color: #4CAF50;
+}
+/*changes the highlight of the buttons color to green*/
+*:focus{
+  outline-color: #4CAF50;
+}
+.slideShowButtons{
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #fff!important;
+  background-color: #000!important;
+}
+.slideShowButtonLeft{
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(0%,-50%);
+}
+.slideShowButtonRight{
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(0%,-50%);
+}
+#top_anchor{
+  position: fixed;
+  right: 2.5%;
+  bottom: 5%;
+  font-size: 500%;
+}
+#top_anchor a{
+   text-decoration: none;
+}
+#top_anchor_text{
+  font-size:20%;
+}
+.portfolio_divs{
+  padding-top: 1em;
+}
+@media only screen and (min-width: 1351px) {
+  /*source for typing effect: https://css-tricks.com/snippets/css/typewriter-effect/*/
+  #home_title{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 1.5px solid #00CC33; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .11em;
+    animation:
+      typing 4s steps(40, end),
+      blink-caret .5s step-end infinite;
+  }
+    /* The typing effect */
+    @keyframes typing{
+      from { width: 0 }
+      to { width: 100% }
+    }
+    /* The typewriter cursor effect */
+    @keyframes blink-caret{
+      from, to { border-color: transparent }
+      50% { border-color: #00CC33 }
+    }
+  #home_title_div{
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  #myVideo{
+    width: 100%;
+  }
+  #home_title{
+    font-size: 3.5vw;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  #home_title_div{
+    display: inline-block;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: normal; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    -webkit-animation: rotateY 1s 1 linear;
+     animation: rotateY 1s 1 linear;
+  }
+    @-webkit-keyframes rotateY {
+     to { -webkit-transform: rotateY(360deg); }
+    }
+    @keyframes rotateY {
+     to { transform: rotateY(360deg); }
+    }
+}
+@media only screen and (max-width: 850px){
+  .right, .dash_lines{
+    float: left;
+    display: inline-block;
+  }
+  .mobile_view{
+    display: inline;
+  }
+  .tab_view{
+    display: inline;
+  }
+  .right{
+    text-decoration: underline;
+  }
+  #home_title_wrapper{
+    padding-top: 30%;
+  }
+  #home_title{
+    font-size: 3.65em;
+  }
+  #myVideo{
+    zoom: 0.70;
+  }
+  #skills_table{
+    width: 90%;
+  }
+  #hobbies{
+    width: 70%;
+  }
+  .hobby_table{
+    width: 10%;
+  }
+  .hobby_table img{
+    width: 4em;
+  }
+  #top_anchor{
+    right: 0%;
+    font-size: 400%;
+  }
+  .budget_app_visual img{
+    height: 20em;
+  }
+}
+@media (min-width: 651px) and (max-width: 700px){
+  #about_me_pic_div{
+    width: 30%;
+  }
+  #home_title_wrapper{
+    padding-top: 15%;
+  }
+@media only screen and (max-width: 650px){
+  #about_me_pic_div{
+    width: 35%;
+  }
+}
+/*landscape phone and tablets*/
+@media (max-width: 979px) and (orientation:landscape){
+  #home_title_wrapper{
+    padding-top: 20%;
+  }
+  #myVideo{
+    width: 100%;
+    zoom: 0.65;
+  }
+  /*landscape phones*/
+  @media only screen and (max-width: 799px) and (orientation:landscape) {
+    #home_title_wrapper{
+      padding-top: 15%;
+    }
+    #myVideo{
+      width: 100%;
+      zoom: 0.45;
+    }
+  }
+}
+/*portrait phone*/
+@media only screen and (max-width: 450px){
+  .skills_label{
+    padding-right: 3%;
+  }
+}
