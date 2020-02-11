@@ -1,0 +1,8 @@
+Skill Set
+·         SCCM - Client management tool
+o    Use it for pushing software and gather device information
+·         Sys Admin Tool - provides specific device info
+·         Active Roles (AD) - Server, Users, and Device management tool
+o    Use for gathering and manipulating information for users, servers, and devices
+·         Remote Desktop/Control (DameWare Mini Remote Control and Remote Desktop Connection) - Device remote management tools
+o    Used for remotely troubleshooting, managing, and repairing devices

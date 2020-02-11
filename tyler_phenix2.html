@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tyler R. Phenix</title>
+				<meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+				<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<style>
+			body {
+				margin: 0;
+			}
+			html{
+					scroll-behavior:smooth;
+			}
+			.right{
+				float:right;
+			}
+			.middle{
+				text-align:center;
+				margin:0;
+			}
+			.heading1_cap{
+				font-weight: bold;
+				text-transform: uppercase;
+				padding-top: 1em;
+			}
+			.heading2{
+				font-weight: bold;
+				float: left;
+			}
+			/*.nav ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				width: 17%;
+				background-color: #f1f1f1;
+				position: fixed;
+				height:90%;
+				overflow: auto;
+			}*/
+			.nav li a {
+				/*display: block;
+				color: #000;
+				padding: 8px 16px;
+				text-decoration: none;*/
+				font-size: 150%;
+			}
+			.nav li.active {
+				border: 1px solid #4CAF50;
+			}
+			.navbar{
+				margin-bottom: 0px;
+			}
+			.main{
+				/*padding:1px 16px;*/
+			}
+			#resume, #cover_letter{
+				background-color:white;
+				border-width:2em;
+				border-style: solid;
+				border-image: url("images/background_image.png") 100 stretch;
+				/*width: 76%;*/
+				/*margin-left:15%;*/
+				padding:10px 16px;
+			}
+			#about, #portfolio{
+				background-color:white;
+				border: 0px solid transparent;
+				/*width: 65%;*/
+				/*margin-left:20%;*/
+				padding:10px 16px;
+			}
+			/*#home{
+				width: 100%;
+			}*/
+			#myVideo{
+				z-index:-100;
+				position: fixed;
+			}
+			#home_title{
+				color: #FFF;
+			}
+			#home_title_wrapper{
+				vertical-align: middle;
+				text-align: center;
+				padding-top: 25em;
+			}
+			#home_title_div{
+				width: 100%;
+			}
+			.resume_name{
+				font-size:25px;
+				font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+				font-style: italic;
+				font-weight: bold;
+			}
+			#summary_text{
+				text-align: center;
+			}
+			td.stars{
+				padding: 0px 0px 2% 0px;
+			}
+			/*Source:https://www.w3schools.com/howto/howto_css_aspect_ratio.asp*/
+			.container{
+				width: 90%;
+				padding-top: 100%; /* 1:1 Aspect Ratio */
+				position: relative; /* If you want text inside of it */
+			}
+			div.star_div{
+				background-color: #BDD6EE;
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				border-radius: 50%;
+				display: inline-block;
+				vertical-align:middle;
+			}
+			#skills_table{
+				cellspacing: 0;
+				cellpadding: 0;
+				width: 75%;
+			}
+			.skills_label{
+				border-right: double;
+				text-align: right;
+				padding-right: .3em;
+				font-style: italic;
+			}
+			.skills{
+				border-width: 1px 0px 1px 0px;
+				border-style: dashed;
+				padding-left: 1%;
+			}
+			.stars{
+				 border-collapse:collapse;
+				 border-bottom: 1px dashed;
+				 border-top: 1px dashed;
+			}
+			.stars:last-child{
+				border-right: 1px solid;
+
+			}
+			.dashes::after {
+				content: "\0020";
+				display: block;
+				min-height: .8em;
+				border-bottom: 1px dashed;
+				overflow: hidden;
+			}
+			.job_duties_list, .project_list{
+				list-style: none;
+			}
+			.job_duties_list li:before, .project_list li:before{
+				content:"\262F";
+			}
+			.project_link{
+				font-style: italic;
+				font-size: ;
+			}
+			#about_me_pic_div{
+				border: solid #4CAF50;
+				float: right;
+				width: 25%;
+				padding: 2%;
+				margin: 2%;
+				background-color: black;
+			}
+			#about_me_pic{
+				height: 100%;
+				width: 100%;
+				border: solid #4CAF50;
+			}
+			#hobbies{
+				width: 40%;
+			}
+			#hobbies,#about_me_description{
+				margin-top: 3%;
+			}
+			.hobby_table{
+				float: left;
+				width: 7em;
+				margin: 5%;
+				/*border: solid #4CAF50;*/
+			}
+			/* Clearfix (clear floats) */
+			#hobbies::after{
+				content: "";
+				clear: both;
+				display: table;
+			}
+			.hobby_table img{
+				width: 100%;
+			}
+			.hobby_table caption{
+				text-align: center;
+				caption-side: bottom;
+				font-size: 100%;
+				border-width: 1px 1px 1px 1px;
+				border-style: solid;
+				border-color: #4CAF50;
+				margin: 0em -0.2em 0em -0.2em;
+			}
+			.mobile_view{
+				display: none;
+			}
+			.tab_view{
+				display: none;
+			}
+			.mySlides:first-child{
+				display: block;
+			}
+			.mySlides{
+			  display:none;
+			  width:100%;
+			}
+			.big_data_visual, .online_resume_visual {
+				width:87%;
+				height: 40em;
+			}
+			.budget_app_visual{
+				position: relative;
+				width: 87%;
+			}
+			.slideShowButtons{
+				border: none;
+		    display: inline-block;
+		    padding: 8px 16px;
+		    vertical-align: middle;
+		    overflow: hidden;
+		    text-decoration: none;
+		    text-align: center;
+		    cursor: pointer;
+		    white-space: nowrap;
+				color: #fff!important;
+				background-color: #000!important;
+			}
+			.slideShowButtonLeft{
+				position: absolute;
+				top: 50%;
+				left: 0%;
+				transform: translate(0%,-50%);
+			}
+			.slideShowButtonRight{
+				position: absolute;
+				top: 50%;
+				right: 0%;
+				transform: translate(0%,-50%);
+			}
+			#top_anchor{
+				position: fixed;
+				right: 2.5%;
+				bottom: 5%;
+				font-size: 500%;
+			}
+			#top_anchor a{
+				 text-decoration: none;
+			}
+			#top_anchor_text{
+				font-size:20%;
+			}
+			.portfolio_divs{
+				padding-top: 1em;
+			}
+			@media only screen and (min-width: 1351px) {
+			  /*source for typing effect: https://css-tricks.com/snippets/css/typewriter-effect/*/
+				#home_title{
+					overflow: hidden; /* Ensures the content is not revealed until the animation */
+					border-right: 1.5px solid #00CC33; /* The typwriter cursor */
+					white-space: nowrap; /* Keeps the content on a single line */
+					margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+					letter-spacing: .11em;
+					animation:
+						typing 4s steps(40, end),
+						blink-caret .5s step-end infinite;
+				}
+					/* The typing effect */
+					@keyframes typing{
+						from { width: 0 }
+						to { width: 100% }
+					}
+					/* The typewriter cursor effect */
+					@keyframes blink-caret{
+						from, to { border-color: transparent }
+						50% { border-color: #00CC33 }
+					}
+				#home_title_div{
+					display: -ms-grid;
+					display: grid;
+					-webkit-transition: all .5s;
+					-o-transition: all .5s;
+					transition: all .5s;
+					-webkit-user-select: none;
+					-moz-user-select: none;
+					-ms-user-select: none;
+					user-select: none;
+				}
+				#myVideo{
+					width: 100%;
+				}
+				#home_title{
+					font-size: 3.5vw;
+				}
+			}
+			@media only screen and (max-width: 1350px) {
+				#home_title_div{
+					display: inline-block;
+					overflow: hidden; /* Ensures the content is not revealed until the animation */
+					white-space: normal; /* Keeps the content on a single line */
+					margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+					letter-spacing: .15em;
+					-webkit-animation: rotateY 1s 1 linear;
+					 animation: rotateY 1s 1 linear;
+				}
+					@-webkit-keyframes rotateY {
+					 to { -webkit-transform: rotateY(360deg); }
+					}
+					@keyframes rotateY {
+					 to { transform: rotateY(360deg); }
+					}
+			}
+			@media only screen and (max-width: 850px){
+				.right, .dash_lines{
+					float: left;
+					display: inline-block;
+				}
+				.mobile_view{
+					display: inline;
+				}
+				.tab_view{
+					display: inline;
+				}
+				.right{
+					text-decoration: underline;
+				}
+				#home_title_wrapper{
+					padding-top: 30%;
+				}
+				#home_title{
+					font-size: 3.65em;
+				}
+				#myVideo{
+					zoom: 0.70;
+				}
+				#skills_table{
+					width: 90%;
+				}
+				#hobbies{
+					width: 70%;
+				}
+				.hobby_table{
+					width: 10%;
+				}
+				.hobby_table img{
+					width: 4em;
+				}
+				#top_anchor{
+					right: 0%;
+					font-size: 400%;
+				}
+				.budget_app_visual img{
+					height: 20em;
+				}
+			}
+			@media (min-width: 651px) and (max-width: 700px){
+				#about_me_pic_div{
+					width: 30%;
+				}
+				#home_title_wrapper{
+					padding-top: 15%;
+				}
+			@media only screen and (max-width: 650px){
+				#about_me_pic_div{
+					width: 35%;
+				}
+			}
+			/*landscape phone and tablets*/
+			@media (max-width: 979px) and (orientation:landscape){
+				#home_title_wrapper{
+					padding-top: 20%;
+				}
+				#myVideo{
+					width: 100%;
+					zoom: 0.65;
+				}
+				/*landscape phones*/
+				@media only screen and (max-width: 799px) and (orientation:landscape) {
+					#home_title_wrapper{
+						padding-top: 15%;
+					}
+					#myVideo{
+						width: 100%;
+						zoom: 0.45;
+					}
+				}
+			}
+			/*portrait phone*/
+			@media only screen and (max-width: 450px){
+				.skills_label{
+					padding-right: 3%;
+				}
+			}
+		</style>
+		<script>
+			var date = "April 25, 2018";
+			var company = "Test_Company";
+			var position = "Test_Position";
+
+			$(document).ready(function(){
+				$("#date").text(date);
+
+				$(".company").each(function(i){
+					$(this).text(company)
+				});
+
+				$(".position").each(function(i){
+					$(this).text(position);
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function(){
+				/*removes "active" class from all list items except the one that is clicked in the nav*/
+				$(".nav li a").click(function(){
+					$(".nav li").each(function(){
+						$(this).removeClass("active");
+					});
+					/*add active class to div that is clicked*/
+					$(this).parent("li").addClass("active");
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function(){
+				/*hide all except first div*/
+				$(".main .sheet").not(":first").hide();
+			});
+		</script>
+		<script>
+			$(document).ready(function(){
+				/*reset hash at the end or URL in case page is refreshed*/
+				window.location.hash = $(this).attr('href');
+				$(".nav a").click(function(){
+					/*change URL: add href value to end of URL*/
+					window.location.hash = $(this).attr('href');
+					/*hide all divs to prepare to show only clicked div*/
+					$(".main .sheet").each(function(){
+						$(this).hide();
+					});
+					/*show div corresponding to clicked href values*/
+					/*comment #001 in reference to comment in nav*/
+					var href = $(this).attr("href");
+					 $(href).show();
+					 /*load page scrolled to the top*/
+					 $("html, body").animate({ scrollTop: 0 }, "fast");
+  			 	 return false;
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function(){
+				/*add class "skils_label" to first TD of #skills_table*/
+				$("#skills_table tr td:first-child").addClass("skills_label");
+				/*add class "skills" to 2nd TD of #skills_table*/
+				$("#skills_table tr td:nth-child(2)").addClass("skills");
+				/*add class "stars" to last 5 TDs of #skills_table*/
+				$("#skills_table tr td:nth-last-child(5),#skills_table tr td:nth-last-child(4),#skills_table tr td:nth-last-child(3),#skills_table tr td:nth-last-child(2),#skills_table tr td:last-child").addClass("stars");
+				/*add div inside of td to make into circle*/
+				$(".stared").append("<div></div>");
+				$(".stared div").addClass("container");
+				$(".container").append("<div></div>");
+				$(".container div").addClass("star_div");
+			});
+		</script>
+		<script>
+		/*source: https://codepen.io/richerimage/pen/jEXWWG*/
+		/*removes dashed lines in resume when page width is at 1150px*/
+			jQuery(document).ready(function($) {
+				var alterClass = function() {
+					var winWidth = document.body.clientWidth;
+					if (winWidth < 850) {
+						$('.dash_lines').removeClass('dashes');
+					} else if (winWidth >= 851) {
+					$('.dash_lines').addClass('dashes');
+					};
+				};
+				$(window).resize(function(){
+					alterClass();
+				});
+			    //Run it when the page first loads:
+				alterClass();
+			});
+		</script>
+		<script>
+			/*bolds the first letter of each word.*/
+			/*Source: https://stackoverflow.com/questions/43776067/style-first-letter-of-each-word-in-paragraph/43776199*/
+			$(document).ready(function(){
+				$('span.boldFirstLetter').each(function(i){
+					var str = $(this).text().split(" ");
+					var span = $(this);
+					$(span).empty();
+					str.forEach(function(a) {
+						//does not bold the first letter of "of" or "the" in titles
+						if(a == 'of' || a == 'the'){
+							$(span).append('&nbsp;' + a);
+						}
+						/*bolds the first letter of all other titles*/
+						else{
+						$(span).append('&nbsp;<strong>' + a.slice(0, 1) + '</strong>' + a.slice(1))
+						}
+					});
+				});
+				/*$("div #employer").css({"word-wrap":"word-break"});*/
+			});
+		</script>
+		<script>
+		/*JavaScript Slideshow. Source: https://www.w3schools.com/w3css/w3css_slideshow.asp*/
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  if (n > x.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+			    x[i].style.display = "none";
+			  }
+				 x[slideIndex-1].style.display="block";
+				 $("#slideShow_caption").empty();
+ 				$("#slideShow_caption").append(slideIndex + "/" + x.length);
+			}
+			x[-1].style.display = "block";
+			$(".mySlides").each(function(index){
+					$(this).attr("onClick", "plusDivs(1)");
+				});
+
+		/*JavaScript Slideshow. Source: https://www.w3schools.com/w3css/w3css_slideshow.asp*/
+
+
+
+		</script>
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<div class="icon-bar"></div>
+					<div class="icon-bar"></div>
+					<div class="icon-bar"></div>
+				  </button>
+				  <a class="navbar-brand" href="#">Ty's Space</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<!--reference comment #001 in javascript-->
+					<!--each href in the nav is assigned a value with a '#' in front of it to allow javascript to recognize it as an ID when taking value (e.g. the javascript takes in "#home" as "element with an ID of 'home'")-->
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#home">Home</a></li>
+						<li><a href="#resume">Resume</a></li>
+						<!--<li><a href="#cover_letter">Cover Letter</a></li>-->
+						<li><a href="#portfolio">Portfolio</a></li>
+						<li><a href="#about">About</a></li>
+					</ul>
+					<!--<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><div class="glyphicon glyphicon-log-in"></div> Login</a></li>
+					</ul>-->
+				</div>
+			</div>
+		</nav>
+		<!--<div class="nav">
+		<!--refence comment #001 in javascript-->
+		<!--each href in the nav is assigned a value with a '#' in front of it to allow javascript to recognize it as an ID when taking value (e.g. the javascript takes in "#home" as "element with an ID of 'home'")-->
+			<!--<ul>
+			  <li><a class="active" href="#home">Home</a></li>
+			  <li><a href="#resume">Resume</a></li>
+			  <!--<li><a href="#cover_letter">Cover Letter</a></li>-->
+			 <!-- <li><a href="#about">About</a></li>
+			</ul>
+		</div>-->
+		<div class="main">
+			<div id="home" class="sheet" name="home">
+					<video autoplay muted loop id="myVideo">
+						<source src="images/typing_video.mp4" type="video/mp4">
+						Your browser does not support HTML5 video.
+					</video>
+					<div id="home_title_wrapper">
+						<div id="home_title_div">
+							<h1 id="home_title" class="">Welcome to the Curriculum Vitae of Tyler Phenix</h1>
+						</div>
+				  </div>
+			</div>
+			<div id="resume" class="sheet" name="resume">
+				<div class"heading1_cap" class="middle">
+					<div class="resume_name">Tyler R. Phenix</div><br>
+					Tyler Phenix's Resume ([<a href="resume.docx">DOC</a>], [<a href="resume.pdf">PDF</a>])<br>
+					<a href="mailto:trpgy5@umkc.edu">trpgy5@umkc.edu</a> &#9672;
+					Mobile: (816)977&ndash;5441 &#9672;
+					Address: 10506 Wallace Ave Kansas City, Missouri 64134
+				</div>
+				<div id="resume_body">
+					<div id="summary_title" class="heading1_cap">
+						Summary
+					</div>
+					<hr>
+					<p id="summary_text">
+						Zealous and eager Desktop Technical Analyst with vast knowledge in variegated professional experiences.
+						Consummate team player and a dexterous learner and teacher who cultivates inspiration from both peers and self.
+						Passionate about peer&ndash;to&ndash;peer education, gaining new skills, and the development of software while also developing character.
+					</p>
+					<div class="heading1_cap">
+						Education
+					</div>
+					<hr>
+					<div id="education_body">
+						<div class="dash_lines dashes">
+							<div class="heading2">Bachelor of Information Technology (BIT) with minor in Business Administration</div><span class="tab_view"><br></span>
+							<div class="right">December 2017</div>
+						</div><br><span class="tab_view"><br></span>
+						University of Missouri &ndash; Kansas City &mdash; Kansas City, Missouri
+						 <br>
+						 <br>
+						 <div class="dash_lines dashes">
+							<div class="heading2">Associates in Computer Science (ACS) with an emphasis in Computer Information Systems</div><span class="tab_view"><br></span>
+							<div class="right">December 2014</div>
+						</div><br><span class="tab_view"><br></span>
+						Metropolitan Community College &ndash; Longview &mdash; Lee's Summit, Missouri
+					</div>
+					<div id="skills">
+						<div id="skills_title" class="heading1_cap">
+							Skills
+						</div>
+						<hr>
+						<table id="skills_table">
+							<tbody>
+								<tr>
+									<td>
+										Computer
+									</td>
+									<td>
+										Programming (C++, Java (including app development), Python, C#, etc.)
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										Database (MySQL and Oracle)
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										Big Data command prompt languages and other Apache Tools/Languages (Hadoop, Scala, Spark SQL, Pig, etc.)
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										Web Design (e.g. JavaScript/jQuery, HTML5, CSS3, ASP.NET,&nbsp;PHP etc.)
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										Data and data manipulation (XML, JSON, Ajax, etc.)
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										Networking&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Personal
+									</td>
+									<td>
+										Oral and written communication
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										Time management, organizational, prioritization, and planning (including Agile Planning/SCRUM)
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										Decision making, analytical and problem solving
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										Creativity
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										Adaptability
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										Independent working
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										Teamwork
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										Software
+									</td>
+									<td>
+										Adobe products and&nbsp;various graphic design editors (e.g. Premiere, Photoshop, Dreamweaver, Gimp etc.)
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										Microsoft Office products&nbsp;(e.g. Word, Excel, PowerPoint, SharePoint, etc.)
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										various Integrated Development Environment (IDE) applications&nbsp;(e.g. Dreamweaver, NetBeans, Microsoft Visual Studios, Eclipse, etc.)
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										Command Prompt/Power Shell (Windows), Terminal (Linux and Mac)
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td class="stared">
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+									<td>
+										&nbsp;
+									</td>
+								</tr>
+								<tr>
+									<td class="skills_label">
+										&nbsp;
+									</td>
+									<td class="skills">
+										Service Management and Issue Tracking Platforms (e.g. JIRA [JIRA ServiceDesk], ServiceNow [ServiceCentral], BMC [Remedy])
+									</td>
+									<td class="stared stars">
+										&nbsp;
+									</td>
+									<td class="stared stars">
+										&nbsp;
+									</td>
+									<td class="stared stars">
+										&nbsp;
+									</td>
+									<td class="stared stars">
+										&nbsp;
+									</td>
+									<td class="stars">
+										&nbsp;
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div id="employment">
+						<div id="internship_experience_title" class="heading1_cap">
+							Internship Experience
+						</div>
+						<hr>
+						<div class="dash_lines dashes">
+							<div class="heading2">Information Security Intern</div><span class="tab_view"><br></span>
+							<div class="right">August 2017 &mdash; June 2018</div>
+						</div><br><span class="tab_view"><br></span>
+						<div id="employer"> <span class="boldFirstLetter">Information Technology Group</span> | <span class="mobile_view"><br></span><span class="boldFirstLetter">Hospitals Corporation of America</span> &mdash; Kansas City, MO </div>
+						<ul class="job_duties_list">
+							<li>Protected the company from information security threats especially when using technologies</li>
+							<li>Created multiple information security tools that aided teammates in projects sent from corporate that affected all division employees</li>
+							<li>Completed 3 Security Risk Assessments to ensure facilities (hospitals and ambulatory surgery centers) followed HIPAA Security Guidelines</li>
+							<li>Assisted in hosting 4 Facility Security Committee meetings to update facility leaders on information security incidents and get feedback on information security related concerns</li>
+							<li>Became the first SCRUM Master for our team and ultimately trained others to be SCRUM masters</li>
+						</ul>
+
+						<div class="dash_lines dashes">
+							<div class="heading2">Web Content Intern</div><span class="tab_view"><br></span>
+							<div class="right">November 2015 &mdash; December 2016</div>
+						</div><br><span class="tab_view"><br></span>
+						<div id="employer"> <span class="boldFirstLetter">National Association of Insurance Commissioners</span> &mdash; Kansas City, MO </div>
+						<ul class="job_duties_list">
+							<li>Programmed/built innovative code that was used in production to solve ongoing challenges</li>
+							<li>Earned 2 Star Rewards (one of the highest rewards the company offers to their employees) for outstanding work on 2 separate projects</li>
+							<li>Kept website up to date with posting from each department for both internal and external webpages</li>
+							<li>Promptly updated the Nation Meetings page for 2 National Meetings to ensure the correct and current information was available for leaders, staff, and those who needed to view the information</li>
+						</ul>
+
+						<div id="work_experience_title" class="heading1_cap">
+							Work Experience
+						</div>
+						<hr>
+						<div class="dash_lines dashes">
+							<div class="heading2">Technical Analyst</div><span class="mobile_view"><br></span>
+							<div class="right">June 2018 &mdash; Present</div>
+						</div><br><span class="mobile_view"><br></span>
+						<div id="employer"> <span class="boldFirstLetter">Information Technology Group </span> | <span class="mobile_view"><br></span><span class="boldFirstLetter">Hospitals Corporation of America</span> &mdash; Kansas City, MO </div>
+						<ul class="job_duties_list">
+							<li>Provide support for mostly caretakers but also any other users at HCA facilities</li>
+							<li>Manage hospital IT incidents and projects that untimely impacted patient care</li>
+							<li>Add to the ongoing knowledge base files to make assisting end-users simpler for coworkers</li>
+							<li>Train coworkers with using new ticketing management system</li>
+							<li>Develop innovative solutions that benefited coworkers and the company by simplifying task</li>
+						</ul>
+
+						<div class="dash_lines dashes">
+							<div class="heading2">Service Desk Analyst II</div><span class="tab_view"><br></span>
+							<div class="right">January 2017 &mdash; August 2017</div>
+						</div><br><span class="tab_view"><br></span>
+						<div id="employer"> <span class="boldFirstLetter">National Association of Insurance Commissioners</span> &mdash; Kansas City, MO </div>
+						<ul class="job_duties_list">
+							<li>Provided support for multiple applications that were used for businesses to submit documents to government agencies</li>
+							<li>Created knowledge base articles to advance the knowledge of peers and future employees</li>
+							<li>Trained interns and other coworkers with using new ticketing management system</li>
+							<li>Educated peers on relational databases and SQL</li>
+						</ul>
+
+						<div class="dash_lines dashes">
+							<div class="heading2">Certified Technician</div><span class="tab_view"><br></span>
+							<div class="right">August 2012 &mdash; November 2015</div>
+						</div><br><span class="tab_view"><br></span>
+						<div id="employer">Sears Automotive &mdash; Independence, MO </div>
+						<ul class="job_duties_list">
+							<li>Successfully fulfilled work orders with efficiency and in accordance with Sears Automotive standards and automotive dealer specifications</li>
+							<li>Explained vehicle diagnoses/troubleshooting steps for required repairs in a non&ndash;technical manner to service the Customer Service Advisor (CSA) and customers</li>
+							<li>Continuously learned new technical information, advancements and techniques in formal and self&ndash;study training sessions to stay familiar with rapidly changing technology and to expand knowledge in the automotive and customer service workforce</li>
+							<li>Inspected and tested new vehicles and recorded findings so that necessary repairs could be made</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="cover_letter" class="sheet">
+				<div id="cover_letter_heading" class="middle">
+					<div class="name">Tyler R. Phenix</div><br>
+					Tyler Phenix's Cover Letter ([<a href="cover_letter.docx">DOC</a>], [<a href="cover_letter.pdf">PDF</a>])
+				</div>
+
+					<hr>
+
+				<div id="cover_letter_heading" class="middle">
+					Address: 10506 Wallace Ave Kansas City, Missouri 64134
+					<br>
+					Cell: (816)977&ndash;5441
+					<br>
+					Email: <a href="mailto:trpgy5@umkc.edu">trpgy5@umkc.edu</a>
+				</div>
+
+				<br>
+
+				<p id="date"></p>
+
+				<p><span class="company"></span> &ndash; <span class="position"></span> </p>
+
+				<br>
+
+				<p>Dear <span class="company"></span>,</p>
+
+				<p>I found your posting on Indeed for a <span class="position"></span> which immediately caught my attention. I just graduated college in December of 2017, with a Bachelor of Arts Degree in Information Technology, and a <span class="position"></span> position would be a great fit for me to apply my knowledge of data analytics and development.</p>
+
+				<p>Since graduating from Metropolitan Community College of Kansas City in 2014, with an Associate Degree in Computer Science, I have worked as a; Web Content Intern, for a little over a year; a Service Desk Analyst II, for 7 months; and as an Information Security Intern for 6 months, which is my current job.</p>
+
+				<p>All 3 of the computer science/information technology jobs I have had, plus my academic work, make me a great candidate for this position. Both my industry and academic work have provided to me experience with:
+				<ul>
+					<li>testing code (in testing environments such as Quality Assurance [QA])</li>
+					<li>submitting code to production</li>
+					<li>using version control software (e.g. GitHub) when working with a team and independently</li>
+					<li>following agile planning processes and frameworks (e.g. Scrum, Test&ndash;Driven Development [TDD], etc.)</li>
+					<li>team work &ndash; both in leadership roles/positions and more subordinate roles/potions within the company and/or within a group for projects</li>
+					<li>communication and understanding between myself and individuals with all levels of technical competency</li>
+					<li>a wide range of languages, frameworks, and modules (please see resume for more detail)</li>
+					<li>risk management (e.g. risk analysis, risk avoidance, risk mitigation, risk transfer, risk retention, etc.)</li>
+					<li>adaptability with environments, people, and technology</li>
+				</ul>
+				</p>
+				My 4 years of computer science/information technology experience in the industry and in academics, along with many hours of personal practice, have given me a solid foundation for this position. With this experience, I am comfortable performing a wide range of job duties and I am a zealous worker both independently and with a team or teams. I am eager to contribute my enthusiasm and skills to <span class="company"></span> and to grow in this position.</p>
+
+				<p>Additional Skills</p>
+				<hr>
+				<ul>
+					<li>Writing skills &ndash; Ability to efficiently produce information and summaries of completed task in a comprehendible manner while keeping all records secure and updated.</li>
+					<li>Speaking skills &ndash; Proven ability to verbally express ideas and give explanations that are comprehendible for coworkers and customers in person and over the phone.</li>
+					<li>Collaboration skills &ndash; Ability along with willingness to proficiently build relationships with others quickly and use great communication skills to help produce an efficient and positive work environment.</li>
+					<li>Working Skills &ndash; Fast learner, reliable, swift, and thorough with all task given, while also being a zealous employee with an excellent work ethic. My work ethics extends to me working individually due to my ability to be self&ndash;motivated and having self&ndash;teaching skills.
+				</ul>
+
+				<p>My resume will give you a greater understanding of my qualifications.</p>
+
+				<p>Please contact me if you have any questions.</p>
+
+				<br>
+
+				<p>Sincerely,</p>
+				<p>Tyler Phenix<br>
+				(816)&ndash;977&ndash;5441<br>
+				<a href="mailto:trpgy5@umkc.edu">trpgy5@umkc.edu</a>
+				</p>
+			</div>
+
+			<div id="portfolio" class="sheet" name="portfolio">
+
+				<div id="top" name="top"></div>
+
+				<h2>Portfolio</h2>
+
+				<div id="top_anchor"><a href="#top">&#8657;<span id="top_anchor_text">TOP</span></a></div>
+
+					<ul id="portfolio_list">
+						<li><a href="#online_resume" class="portfolioListItems">My Online Resume</a></li>
+						<li><a href="#budget_watch_app" class="portfolioListItems">Budget Watch App</a></li>
+						<li><a href="#big_data_project" class="portfolioListItems">Big Data Project</a></li>
+					</ul>
+
+				  <div id="online_resume_div" class="portfolio_divs">
+						<h3><a href="tyler_phenix.html" target="_blank" class="project_link" id="project_resume" name="online_resume">My Online Resume</a></h3>
+						<ul class="project_list">
+										<li>Created my online resume using jQuery/JavaScript, CSS, HTML to present my talents, experience, and introduce myself</li>
+										<li>Organized and optimized the text within my resume using jQuery/JavaScript functions and statements (e.g. I created a “boldFirstLetter” class to bold the first letter of every word within the tags, expect the words/symbols I specified, instead of manually changing the font-weight of each letter)</li>
+										<li>Constructed my website to be responsive (i.e. function properly and look similar on any device)</li>
+						</ul>
+						<iframe class="online_resume_visual present_portfolio" src="tyler_phenix.html"></iframe>
+				  </div>
+					<div id="budget_watch_app_div" class="portfolio_divs">
+						<h3><a href="https://github.com/typ64/449_project" target="_blank" class="project_link" id="project_budget_watch_app" name="budget_watch_app">Budget Watch App</a></h3>
+						<ul class="project_list">
+										<li>Designed a Java based Android mobile application to help users keep track of what they buy while shopping to help them stay on budget</li>
+										<li>Implemented efficient functions to keep a dynamic running total to make the app more user friendly and increase efficiency  </li>
+										<li>Demonstrated good coding practices by keeping my business logic code separate from my user interface [UI] code and refactoring functions that lacked efficiency</li>
+						</ul>
+						<div class="budget_app_visual present_portfolio">
+							<div id="slideShow_caption"> </div>
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_1.jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_1 (1).jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_1 (2).jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_2.jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_2 (1).jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_2 (2).jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_3.jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_3 (1).jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_3 (2).jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_3 (3).jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_3 (4).jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_4.jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_4 (1).jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_4 (2).jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_4 (3).jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_5.jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_5 (1).jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_6.jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_6 (1).jpg">
+						  <img class="mySlides" src="images\Sprint_Review_Pictures\Iteration_6 (2).jpg">
+
+						  <button class="slideShowButtons slideShowButtonLeft" onclick="plusDivs(-1)">&#10094;</button>
+						  <button class="slideShowButtons slideShowButtonRight" onclick="plusDivs(1)">&#10095;</button>
+						</div>
+				</div>
+				<div id="big_data_project_div" class="portfolio_divs">
+					<h3><a href="https://github.com/typ64/bigdata/" target="_blank" class="project_link" id="project_big_data" name="big_data_project">Big Data Project</a></h3>
+					<ul class="project_list">
+									<li>Extracted almost 2000 tweets based on the keyword “trump” and performed over 20 queries on the data to analyze it and find certain trends</li>
+									<li>Produced concise quires to best obtain the results needed and extracted the output to a comma-separated values (CSV) file for simpler analysis</li>
+					</ul>
+					<iframe class="big_data_visual present_portfolio" src="https://onedrive.live.com/embed?cid=4FB038768864797C&amp;resid=4FB038768864797C%217685&amp;authkey=AK4-gEhllb9iN-k&amp;em=2&amp;wdAr=1.7777777777777777" frameborder="0">This is an embedded
+						<a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office Online</a>.</iframe>
+			  </div>
+			</div>
+
+			<div id="about" class="sheet" name="about">
+				<h2>About Me</h2>
+				<div id="about_me_pic_div">
+					<img src="images/me_headshot.jpeg" id="about_me_pic">
+				</div>
+				<div id="about_me_description">
+					<p>My name is Tyler. I am a recent graduate of the University of Missouri &ndash; Kansas City [UMKC]. I live in Kansas City, MO where I was raised since I was two years old.</p>
+					<p>I currently work as a Desktop Technical Analyst for HCA where I assist clinical employees with technical related issues.</p>
+					<p>My goal is to eventually be on the software side of things and to feel like I make a difference in which ever company I become a part of.</p>
+					<p>If you have any more questions, please do not hesitate to let me know. I can be reached via email at <a href="mailto:trpgy5@umkc.edu">trpgy5@umkc.edu</a>.
+				</div>
+				<div id="hobbies">
+					<h2>Hobbies</h2>
+					<table id="planet_pic_table" class="hobby_table">
+						<tr>
+							<td>
+								<img src="images/planet.png" alt="planet">
+							</td>
+						</tr>
+						<caption>Learning</caption>
+					</table>
+					<table id="trees_pic_table" class="hobby_table">
+						<tr>
+							<td>
+								<img src="images/outdoors.png" alt="trees">
+							</td>
+						</tr>
+						<caption>Outdoors</caption>
+					</table>
+					<table id="suitcase_pic_table" class="hobby_table">
+						<tr>
+							<td>
+								<img src="images/suitcase.png" alt="suitcase">
+							</td>
+						</tr>
+						<caption>Traveling</caption>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
