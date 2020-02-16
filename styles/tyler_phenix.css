@@ -126,6 +126,14 @@ div.star_div{
   padding-right: .3em;
   font-style: italic;
 }
+/*makes last row border at the bottom in skills table solid and black*/
+#skills_table tr:last-child{
+  border-bottom: 1px solid;
+}
+/*hides the border of the first td of last row in the skills table since the former CSS rule-set shows it*/
+/*#skills_table tr:last-child > td:first-child{
+  border-bottom-style: hidden;
+}*/
 .skills{
   border-width: 1px 0px 1px 0px;
   border-style: dashed;
@@ -138,9 +146,8 @@ div.star_div{
 }
 .stars:last-child{
   border-right: 1px solid;
-
 }
-/*divides the skill table categories using a solid line for the entire row (except for the first column if the ":not.." is uncommented*/
+/*divides the skill table categories using a solid line for the entire row (except for the first column if the ":not.." is uncommented)*/
 .skillTabelCategoryLabel td/*:not(:first-child)*/{
   border-top: 2px solid #4CAF50;
 }

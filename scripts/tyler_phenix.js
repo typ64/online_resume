@@ -77,7 +77,7 @@ $(document).ready(function(){
     $("#skills_table tr td:nth-child(2)").addClass("skills");
     /*add class "stars" to last 5 TDs of #skills_table*/
     $("#skills_table tr td:nth-last-child(5),#skills_table tr td:nth-last-child(4),#skills_table tr td:nth-last-child(3),#skills_table tr td:nth-last-child(2),#skills_table tr td:last-child").addClass("stars");
-    /*add div inside of td to make into circle*/
+    /*add div inside of td to make into circles to indicate skill level of each category*/
     $(".stared").append("<div></div>");
     $(".stared div").addClass("container");
     $(".container").append("<div></div>");
@@ -87,7 +87,7 @@ $(document).ready(function(){
 //
 //
 
-/*removes dashed lines in Resume webpage when page width is at 1150px to help with displaying on smaller screens*/
+/*removes dashed lines in Resume webpage when page width is at 850px to help with displaying on smaller screens*/
 /*source: https://codepen.io/richerimage/pen/jEXWWG*/
   jQuery(document).ready(function($) {
     var alterClass = function() {
