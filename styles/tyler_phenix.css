@@ -68,6 +68,9 @@ a:hover{
   /*margin-left:20%;*/
   padding:10px 16px;
 }
+#portfolio{
+  margin-bottom: 5%;
+}
 /*#home{
   width: 100%;
 }*/
@@ -228,13 +231,17 @@ div.star_div{
   display:none;
   width:100%;
 }
-.big_data_visual, .online_resume_visual {
+.iframe_project_visuals{
   width:87%;
   height: 40em;
 }
-.budget_app_visual{
+.images_project_visuals{
   position: relative;
   width: 87%;
+}
+.small_iframe_project_visuals{
+  width:60%;
+  height: 15em;
 }
 #slideShow_caption{
   margin-left: 50%;
@@ -285,6 +292,9 @@ div.star_div{
 }
 .portfolio_divs{
   padding-top: 1em;
+}
+a.portfolioListItems:hover{
+  font-style: italic;
 }
 @media only screen and (min-width: 1351px) {
   /*source for typing effect: https://css-tricks.com/snippets/css/typewriter-effect/*/

@@ -68,7 +68,7 @@ class SelectedTraveling extends React.Component {
       return traveling_details('div',
       { onClick: () => this.setState({ selectedTraveling: false }) },
       //'\u25BC' adds a down pointing black triangle to the beginning of the details to show it has been expanded
-      '\u25BC My enjoyment of traveling is not new. I have always traveled across the country to visit family and to go on vacations with family. Growing up I never got the opportunity to travel abroad but now that I am older that is my goal!'
+      '\u25BC My enjoyment of traveling is not new. I have always traveled across the country to visit family and to go on vacations with family. Growing up, I never got the opportunity to travel abroad but now that I am older that is my goal!'
       );
     }
     return traveling_details(
