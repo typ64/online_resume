@@ -151,7 +151,7 @@ div.star_div{
   border-right: 1px solid;
 }
 /*divides the skill table categories using a solid line for the entire row (except for the first column if the ":not.." is uncommented)*/
-.skillTabelCategoryLabel td/*:not(:first-child)*/{
+.skillTableCategoryLabel td/*:not(:first-child)*/{
   border-top: 2px solid #4CAF50;
 }
 .dashes::after {

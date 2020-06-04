@@ -69,7 +69,7 @@ $(document).ready(function(){
 //
 //
 
-/*creates dots on Resume webpage in the"skills" section to show skill level for each skill*/
+/*creates dots on Resume webpage in the "skills" section to show skill level for each skill*/
   $(document).ready(function(){
     /*add class "skils_label" to first TD of #skills_table*/
     $("#skills_table tr td:first-child").addClass("skills_label");
