@@ -1,0 +1,128 @@
+
+Englsh 110 Eng I:Intro Acad Prose B 3.0
+Hrs Att Hrs Ern Qual Pts GPA
+UGRD Term: 3.0 3.0 9.00 3.000
+UGRD CUM: 3.0 3.0 9.00 3.000
+01/20/2012 Good Standing --
+SPNG 2012 Local Campus Credits Ugrd Nond-Ua&s
+Englsh 204 Writing About Literature C 3.0
+Math 110 College Algebra B 3.0
+Physics 210 General Physics I A 4.0
+Hrs Att Hrs Ern Qual Pts GPA
+UGRD Term: 10.0 10.0 31.00 3.100
+UGRD CUM: 13.0 13.0 40.00 3.077
+05/21/2012 Good Standing --
+FALL 2012 Metropolitan Community College
+Bsad 101 Accounting Principles I D 3.0
+CSIS 115 Intro to Micro Appls C 3.0
+Coll 100 First-Year Seminar B 1.0
+Hist 121 American History II C 3.0
+Psyc 140 General Psychology A 3.0
+FALL 2013 Metropolitan Community College
+CSIS 123 Programmg Fundamntls: C 3.0
+Engl 102 Composition & Reading II B 3.0
+Phil 100 Intro to Philosophy D 3.0
+Pols 135 Intro to Political Sci C 3.0
+SS University of Missouri - Kansas City
+Unofficial Academic Record
+
+Span 101 Elementary Spanish I B 5.0
+SPNG 2014 Metropolitan Community College
+CSIS 116 Desktop Publishing B 3.0
+CSIS 128 Web Development A 3.0
+CSIS 223 Object-Orient Programmg A 3.0
+Math 141 Discret Struct CS I C 3.0
+SpDr 100 Fundamentals of Speech A 3.0
+FALL 2014 Metropolitan Community College
+CSIS 221 Intro to Computer Arch B 3.0
+CSIS 233 Web-Centric Programming A 3.0
+SPNG 2015 Metropolitan Community College
+Biol 101 General Biology A 5.0
+Econ 211 Prin of Economics-Micro A 3.0
+Math 115 Statistics C 3.0
+SPNG 2015 Local Campus Credits Ugrd Inf-Tc-Bit
+Comp Sci 291 Discrete Structures II W 3.0
+Inf Tc 222 Multimedia Prod & Concep B 3.0
+Hrs Att Hrs Ern Qual Pts GPA
+UGRD Term: 3.0 3.0 9.00 3.000
+UGRD CUM: 16.0 78.0 49.00 3.063
+05/18/2015 Good Standing --
+SUM 2015 Local Campus Credits Ugrd Inf-Tc-Bit
+Math 210 Calculus I W 4.0
+Mgt 330 Udrstdng the Indvdl in Organzt B- 3.0
+Hrs Att Hrs Ern Qual Pts GPA
+UGRD Term: 3.0 3.0 8.10 2.700
+UGRD CUM: 19.0 81.0 57.10 3.005
+08/06/2015 Good Standing --
+FALL 2015 Johnson County Community College
+CS 211 Discrete Struct II C 3.0
+FALL 2015 Local Campus Credits Ugrd Inf-Tc-Bit
+Acctng 210 Intro to Financial Actg C 3.0
+Dsom 326 Productn/Operation Mngmt B 3.0
+Ent 215 Introduction to Entrepreneur A- 3.0
+Mkt 324 Marketing Concepts C 3.0
+Hrs Att Hrs Ern Qual Pts GPA
+UGRD Term: 12.0 12.0 32.10 2.675
+UGRD CUM: 31.0 96.0 89.20 2.877
+12/24/2015 Good Standing --
+SPNG 2016 Local Campus Credits Ugrd Inf-Tc-Bit
+Anch 308 Ethical Issues-Comp/Eng C 3.0
+Comp Sci 303 Data Structures B- 3.0
+Comp Sci 371 Dtabase Design, Imp &Var W 3.0
+Disc 300 Discourse III B 3.0
+Math 210 Calculus I RF 4.0 *
+Hrs Att Hrs Ern Qual Pts GPA
+UGRD Term: 9.0 9.0 23.10 2.567
+UGRD CUM: 40.0 105.0 112.30 2.808
+05/19/2016 Good Standing --
+SUM 2016 Local Campus Credits Ugrd Inf-Tc-Bit
+Inf Tc 490WD Special Topics B 3.0
+- Web Development
+Inf Tc 491 Internship CR 3.0 *
+SS University of Missouri - Kansas City
+Unofficial Academic Record
+
+Math 210 Calculus I B 4.0
+Hrs Att Hrs Ern Qual Pts GPA
+UGRD Term: 7.0 10.0 21.00 3.000
+UGRD CUM: 47.0 115.0 133.30 2.836
+08/10/2016 Good Standing --
+FALL 2016 Local Campus Credits Ugrd Inf-Tc-Bit
+Comp Sci 420 Intro Network & Applications B 3.0
+Comp Sci 431 Intro Operating Systems RF 3.0
+Comp Sci 449 Found of Software Engin C+ 3.0
+Inf Tc 321 Intro Computing Res Admn B+ 3.0
+Hrs Att Hrs Ern Qual Pts GPA
+UGRD Term: 9.0 9.0 25.80 2.867
+UGRD CUM: 56.0 124.0 159.10 2.841
+12/21/2016 Good Standing --
+SPNG 2017 Local Campus Credits Ugrd Inf-Tc-Bit
+Comp Sci 371 Dtabase Design, Imp &Var A 3.0
+Comp Sci 451R Software Engineering Capstone B- 3.0
+Comp Sci 456 Human Computer Interface A- 3.0
+Hrs Att Hrs Ern Qual Pts GPA
+UGRD Term: 9.0 9.0 31.20 3.467
+UGRD CUM: 65.0 133.0 190.30 2.928
+05/17/2017 Good Standing --
+SUM 2017 Local Campus Credits Ugrd Inf-Tc-Bit
+Inf Tc 350 Obj-Orientd Software Dev B 3.0
+Hrs Att Hrs Ern Qual Pts GPA
+UGRD Term: 3.0 3.0 9.00 3.000
+UGRD CUM: 68.0 136.0 199.30 2.931
+08/04/2017 Good Standing --
+FALL 2017 Local Campus Credits Ugrd Inf-Tc-Bit
+Comp Sci 431 Intro Operating Systems B+ 3.0
+Comp Sci 490 Special Topics B+ 3.0
+- Intro to Big Data Systems
+Hrs Att Hrs Ern Qual Pts GPA
+UGRD Term: 6.0 6.0 19.80 3.300
+UGRD CUM: 74.0 142.0 219.10 2.961
+12/21/2017 Good Standing --
+SS University of Missouri - Kansas City
+Unofficial Academic Record
+
+A = 11
+B = 20
+C = 13
+D = 2
+((11*4)+(20*3)+(13*2)+(2*1))/(9+20+12+2)

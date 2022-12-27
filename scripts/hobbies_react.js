@@ -8,19 +8,19 @@ const traveling_details = React.createElement;
 class SelectedLearning extends React.Component {
   constructor(props) {
     super(props);
-    //initiates the state of the selectedLearning variable so that it doesn't change until clicked
+    //initiates the state of the 'selectedLearning' variable so that it doesn't change until clicked
     this.state = { selectedLearning: false };
   }
   //fuction that runs on load
   render() {
-    //if the selectedLearning state is true, the div inn the HTML is replaced with the text below
+    //if the 'selectedLearning' state is true, the div inn the HTML is replaced with the text below
     if (this.state.selectedLearning) {
       return learning_details('div',
       { onClick: () => this.setState({ selectedLearning: false }) },
       //'\u25BC' adds a down pointing black triangle to the beginning of the details to show it has been expanded
       '\u25BC I love learning about anything and everything. I would much rather know a little about everything than a lot about any one thing. This universe is enormous and I intend to understand as much about it as I can while I am here. '
       );
-    } 
+    }
     return outdoors_details(
       'div',
       { onClick: () => this.setState({ selectedLearning: true }) },
@@ -30,15 +30,16 @@ class SelectedLearning extends React.Component {
   }
 }
 
+//class for the Outdoor hobby
 class SelectedOutdoors extends React.Component {
   constructor(props) {
     super(props);
-    //initiates the state of the selectedOutdoors variable so that it doesn't change until clicked
+    //initiates the state of the 'selectedOutdoors' variable so that it doesn't change until clicked
     this.state = { selectedOutdoors: false };
   }
   //fuction that runs on load
   render() {
-    //if the selectedOutdoors state is true, the div inn the HTML is replaced with the text below
+    //if the 'selectedOutdoors' state is true, the div inn the HTML is replaced with the text below
     if (this.state.selectedOutdoors) {
       return outdoors_details('div',
       { onClick: () => this.setState({ selectedOutdoors: false }) },
@@ -55,15 +56,16 @@ class SelectedOutdoors extends React.Component {
   }
 }
 
+//class for the Traveling hobby
 class SelectedTraveling extends React.Component {
   constructor(props) {
     super(props);
-    //initiates the state of the selectedTraveling variable so that it doesn't change until clicked
+    //initiates the state of the 'selectedTraveling' variable so that it doesn't change until clicked
     this.state = { selectedTraveling: false };
   }
  //fuction that runs on load
  render() {
-   //if the selectedTraveling state is true, the div inn the HTML is replaced with the text below
+   //if the 'selectedTraveling' state is true, the div inn the HTML is replaced with the text below
     if (this.state.selectedTraveling) {
       return traveling_details('div',
       { onClick: () => this.setState({ selectedTraveling: false }) },

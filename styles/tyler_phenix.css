@@ -128,6 +128,7 @@ div.star_div{
   text-align: right;
   padding-right: .3em;
   font-style: italic;
+  font-weight: bold;
 }
 /*makes last row border at the bottom in skills table solid and black*/
 #skills_table tr:last-child{
@@ -295,6 +296,9 @@ div.star_div{
 }
 a.portfolioListItems:hover{
   font-style: italic;
+}
+.hobby_learn_more{
+  font-size:150%;
 }
 @media only screen and (min-width: 1351px) {
   /*source for typing effect: https://css-tricks.com/snippets/css/typewriter-effect/*/

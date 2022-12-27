@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tyler Phenix's Resume</title>
+		<style>
+		body{
+			background-color:black;
+		}
+		#resume{
+			background-color:white;
+			border: 50px solid transparent;
+			padding: 0 5% 1% 5%;
+			border-image: url("background_image.jpg") 100 stretch;
+			width: 65%;
+			margin: auto;
+		}
+		.name{
+			font-size:25px;
+			font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+			font-style: italic;
+			font-weight: bold;
+		}
+		.right{
+			float:right;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="resume">
+			<p style="text-align:center">
+				<span class="name">Tyler R. Phenix</span><br>
+				Tyler Phenix's Resume ([<a href="resume.docx">DOC</a>], [<a href="resume.pdf">PDF</a>])<br>
+				<a href="mailto:trpgy5@umkc.edu">trpgy5@umkc.edu</a> &#x2666;
+				Mobile: (816) &ndash; 977 &ndash; 5441 &#x2666;
+				Address: 10506 Wallace Ave Kansas City, Missouri 64134
+			</p>
+			<p><strong>Objective</strong><br>
+				<hr>
+				An employment opportunity in an Information Technology or Computer Science related field.  
+			</p>
+			<p> 
+				<strong>Education</strong><br>
+				<hr>
+				  <strong>University of Missouri &ndash; Kansas City &mdash; Kansas City, Missouri</strong><br>
+				  Bachelor of Information Technology (BIT) with minor in Business Administration 
+				  <span class="right">December 2017</span><br>
+				  <br>
+				  <strong>Metropolitan Community College &ndash; Longview &mdash; Lee&apos;s Summit, Missouri</strong><br>
+				  Associates in Computer Science (ACS) with an emphasis in Computer Information Systems <span class="right">December 2014</span><br>
+			</p>
+			<p>											
+				<strong>Computer Skills</strong>
+				<hr>
+				<p>
+					<u>Programming</u>: C++, Java (including swing and app development), SQL (MySQL and Oracle), Big Data command prompt languages and other Apache Tools/Languages (Hadoop, Scala, Spark SQL, Pig, etc.)
+					<br><u>Software/Applications</u>: most Adobe and Microsoft Office products, Gimp, HDR images, Google Web Designer, SharePoint Designer, Dreamweaver, SFTP/FTP Clients, WinSCP, Oracle SQL Developer, NetBeans, JIRA, Command Prompt (Windows), Terminal (Linux), Hadoop, Spark Shell    
+					<br><u>Web Development</u>: JQuery, JavaScript, HTML5, CSS3, Ajax, XML, RSS, C#/ASP.NET, JSON, PHP
+				</p>
+			</p>
+			<p>
+				<strong>Employment</strong><br>
+				<hr>
+				<strong>Information Technology & Services (IT&S) | Hospitals Corporation of America (HCA)</strong> &mdash; Kansas City, MO<br> 
+				Position: Information Security Intern <span class="right">August 2017 &mdash; Present</span> 
+				<ul>
+					<li>Efficiently managed security-related tickets (e.g., USB block/unblock, Web block/unblock, phishing investigation)</li>
+					<li>Properly responded to security inquiries to the division Information Security email box</li>
+					<li>Accurately handled Data Loss Prevention (DLP) investigations</li>
+					<li>Attentively stayed current on policies, standards, procedures and educated others on policies, standards, procedures as they relate to HIPPA Security Rules</li>
+					<li>Actively assisted in vendor engagements, contracts, and risk assessment</li>
+					<li>Progressively both stayed up-to-date and comprehended contemporary security documentation, security awareness, and communication while abiding by internal policies, standards, and procedures as they relate to HIPPA Security Rules</li>
+					<li>Assisted in audit preparations</li>
+					<li>Cooperatively used Scrum to iteratively complete projects</li>
+				</ul>
+
+				<strong>National Association of Insurance Commissioners (NAIC)</strong> &mdash; Kansas City, MO<br> 
+				Position: Service Desk Analyst II <span class="right">January 2017 &mdash; August 2017</span> 
+				<ul>
+				  <li>Effectively work to resolve customer issues in a timely manner</li>
+				  <li>Prioritize customer requests to promptly respond to inquiries</li>
+				  <li>Efficiently use SQL to fix data issues within the databases and applications</li>
+				  <li>Execute security request including but not limited to account deactivations, password resets, and account creations</li>
+				  <li>Systematically work with other teams/organizations and/or 3rd party organizations to properly resolve customer issues (including but not limited to, State Departments of Insurance, internal teams, and affiliate organizations)</li>
+				  <li>Securely keep compromising information confidential (including but not limited to SSN, banking information, and passwords to accounts)</li>
+				  <li>Progressively attend training sessions to gain knowledge of updates and additions to the applications used daily</li>
+				  <li>Conductively assist in training new hires to properly complete team tasks</li>
+				  <li>Coherently communicate ideas and solutions to issues with teammates, other teams/organizations and customers in person, on the phone, and/or through email</li>
+				</ul>
+
+				<strong>National Association of Insurance Commissioners (NAIC)</strong> &mdash; Kansas City, MO<br> 
+				Position: Web Content Intern <span class="right">November 2015 &mdash; December 2016</span> 
+				<ul>
+				  <li>Efficiently work  individually and as a member of various teams designing, creating, and testing new electronic communications including but not limited to Web sites and html-formatted e-mail</li>  
+				  <li>Proficiently evaluate all sites for consistency, style and grammar with the NAIC standards</li>
+				  <li>Effectively monitor posting requests for accuracy and timeliness</li>
+				  <li>Consistently analyze and resolves Web site problems on a priority basis</li>
+				  <li>Comprehensively assist business partners with electronic communication needs that may include designing, creating, testing and implementing well-designed communications vehicles through a variety of electronic formats</li>
+				</ul>
+
+				<strong>Sears Automotive</strong> &mdash; Independence, MO<br> 
+				Position: Certified Technician <span class="right">August 2012 &mdash; November 2015</span> 
+				<ul>
+				<li>Successfully fulfill work orders with efficiency and in accordance with Sears Automotive standards and automotive dealer specifications</li>
+				<li>Properly explain vehicle diagnoses/troubleshooting steps for required repairs in a non-technical manner to service the Customer Service Advisor (CSA) and customers</li>
+				<li>Continuously learn new technical information, advancements and techniques in formal and self-study training sessions to stay familiar with rapidly changing technology and expand knowledge in the automotive and customer service workforce</li>
+				<li>Intensely inspect and test vehicles and recording findings so that necessary repairs can be made</li>
+				</ul>
+			</p>
+		</div>
+	</body>
+</html>

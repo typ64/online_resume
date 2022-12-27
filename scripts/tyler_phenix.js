@@ -108,19 +108,25 @@ $(document).ready(function(){
 //
 //
 
-  /*bolds the first letter of each word one the Resume webpage "employment history" section for the company names*/
+  /*bolds the first letter of each word on the Resume webpage "employment history" section for the company names*/
   /*Source: https://stackoverflow.com/questions/43776067/style-first-letter-of-each-word-in-paragraph/43776199*/
   $(document).ready(function(){
     $('span.boldFirstLetter').each(function(i){
+      //covers the HTML to text so that is accessable to the DOM and uses " " as a delimiter to parse each word in the company name
       var str = $(this).text().split(" ");
       var span = $(this);
+      //clears out the span to prevent duplicate data
       $(span).empty();
       str.forEach(function(a) {
         //does not bold the first letter of "of" or "the" in titles
+        //adds a space since they were removed during the split in varible "str" and then appends the word ("of" or "the")
         if(a == 'of' || a == 'the'){
           $(span).append('&nbsp;' + a);
         }
-        /*bolds the first letter of all other titles*/
+        /*bolds the first letter of all other words and appends the rest of the letters of that words at the end so that they are not bolded*/
+        //in the begining it adds a space since they were removed during the split in varible "str" and
+        //JavaScript slice() Method Documentation: array.slice(start, end)
+        //with slice, if only one number is entered, it is the start number and the end is the end of the array
         else{
         $(span).append('&nbsp;<strong>' + a.slice(0, 1) + '</strong>' + a.slice(1))
         }
@@ -128,6 +134,37 @@ $(document).ready(function(){
     });
     /*$("div #employer").css({"word-wrap":"word-break"});*/
   });
+//
+//
+//
+
+/*bolds the skill of skill in the skills_table on the Resume webpage so that it is easily identified from the skills examples that follow most skills listed*/
+//anything before the open parentheses is the actual skill for that row of the skill table. Anything within the parentheses is examples of that skill
+$(document).ready(function(){
+  $('td.skills_table_skill').each(function(){
+    //covers the HTML to text so that is accessable to the DOM
+    var tdStr = $(this).text();
+    var td = $(this);
+    //clears out the td to prevent duplicate data
+    $(td).empty();
+    //gets the index of the open parentheses
+    var n = tdStr.indexOf("(");
+    //slices the data so that everything after the "(" is stored including the "(" itself
+    //JavaScript slice() Method Documentation: array.slice(start, end)
+    //with slice, if only one number is entered, it is the start number and the end is the end of the array
+    var s = tdStr.slice(n);
+    var italS = s.italics();
+
+      //slices the data so that everything before the "(" is stored
+    //JavaScript slice() Method Documentation: array.slice(start, end)
+    //with slice, if only one number is entered, it is the start number and the end is the end of the array
+    var res = tdStr.slice(0,n);
+    var boldRes = res.bold();
+
+    //combines the now bolded beginig array and the italicized ending array of the current td data and appends it back to the td
+    $(td).append(boldRes + italS);
+  });
+});
 //
 //
 //
